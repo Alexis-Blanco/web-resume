@@ -1,0 +1,216 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1.5px);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.3em;
+}
+
+h1, h2, p {
+  margin: 0 0 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.boton, .donacion {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: goldenrod;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.boton:hover, .donacion:hover {
+  background-color: darkorange;
+  transform: scale(1.05);
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 0 60px;
+}
+
+.presentacion {
+  max-width: 450px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.profesion {
+  font-size: 1em;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-perfil {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+.boton-ver-mas {
+  margin-top: 1.5cm;
+  display: flex;
+  justify-content: center;
+}
+
+#about:checked ~ .boton-ver-mas,
+#contact:checked ~ .boton-ver-mas,
+#skills:checked ~ .boton-ver-mas,
+#languages:checked ~ .boton-ver-mas,
+#experience:checked ~ .boton-ver-mas,
+#education:checked ~ .boton-ver-mas,
+#tech:checked ~ .boton-ver-mas,
+#projects:checked ~ .boton-ver-mas {
+  display: none;
+}
+
+.barra-navegacion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+#home:checked ~ .barra-navegacion {
+  display: none;
+}
+
+.barra-navegacion label,
+.barra-navegacion .donacion {
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.seccion {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.contenido-seccion {
+  max-width: 600px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+#about:checked ~ #contenido-about,
+#contact:checked ~ #contenido-contact,
+#skills:checked ~ #contenido-skills,
+#languages:checked ~ #contenido-languages,
+#experience:checked ~ #contenido-experience,
+#education:checked ~ #contenido-education,
+#tech:checked ~ #contenido-tech,
+#projects:checked ~ #contenido-projects {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#about:checked ~ main,
+#contact:checked ~ main,
+#skills:checked ~ main,
+#languages:checked ~ main,
+#experience:checked ~ main,
+#education:checked ~ main,
+#tech:checked ~ main,
+#projects:checked ~ main {
+  display: none;
+}
+
+#about:checked ~ figure,
+#contact:checked ~ figure,
+#skills:checked ~ figure,
+#languages:checked ~ figure,
+#experience:checked ~ figure,
+#education:checked ~ figure,
+#tech:checked ~ figure,
+#projects:checked ~ figure {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .foto {
+    margin-top: 20px;
+  }
+
+  .barra-navegacion {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .barra-navegacion label, .barra-navegacion .donacion {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenido-seccion {
+    padding: 20px;
+  }
+}
