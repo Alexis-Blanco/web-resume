@@ -340,3 +340,22 @@ input#tech:checked ~ .barra-navegacion label[for="tech"]::after,
 input#projects:checked ~ .barra-navegacion label[for="projects"]::after {
   width: 100%;
 }
+
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.icon-button img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.icon-button:hover img {
+  transform: scale(1.1);
+}
