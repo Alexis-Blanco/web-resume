@@ -28,7 +28,6 @@ Este proyecto refleja mis habilidades técnicas y sentido del diseño, adaptánd
 
 ![Captura del sitio](./assets/images/screenshot.png)
 
-<sub>💡 Consejo: agrega una captura real en esa ubicación para mostrar tu diseño.</sub>
 
 ---
 
@@ -117,7 +116,6 @@ Este proyecto es de código abierto y está disponible bajo la licencia [MIT](LI
 ## 🔗 Conectemos
 
 * GitHub: [@Alexis-Blanco](https://github.com/Alexis-Blanco)
-* LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
 
 ---
 
@@ -149,7 +147,6 @@ This project reflects both my technical skills and design sensibility, adapting 
 
 ![Preview screenshot](./assets/images/screenshot.png)
 
-<sub>💡 Tip: Add a real screenshot in that location to show off your design.</sub>
 
 ---
 
@@ -237,8 +234,7 @@ This project is open-source and freely available under the [MIT License](LICENSE
 
 ## 🔗 Let's Connect
 
-* GitHub: [@yourusername](https://github.com/Alexis-Blanco)
-* LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+* GitHub: [@Alexis-Blanco](https://github.com/Alexis-Blanco)
 
 ---
 
