@@ -1,4 +1,4 @@
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?style=flat\&logo=github)](https://Alexis-Blanco.github.io/web-resume/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?style=flat\&logo=github)](https://alexis-blanco.github.io/CV-ALEXIS-BLANCO/)
 
 \$1
 
